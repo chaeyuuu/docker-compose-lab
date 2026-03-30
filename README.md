@@ -146,6 +146,7 @@ docker ps
 <img width="1403" height="399" alt="스크린샷 2026-03-30 105714" src="https://github.com/user-attachments/assets/5f53e394-4199-4d7b-a422-7aed680242ff" />
 
 <br/>
+
 ```
 NAME                     STATUS
 healthcheck-lab-db-1     Up 2 minutes (healthy)
@@ -186,6 +187,7 @@ docker logs healthcheck-lab-app-1
 <img width="1557" height="119" alt="스크린샷 2026-03-30 111851" src="https://github.com/user-attachments/assets/fa68a51a-2dee-4bd8-92b2-90ffc402e94b" />
 
 <br/>
+
 ```
 ERROR: Communications link failure
 WARN:  Could not obtain connection to query metadata
