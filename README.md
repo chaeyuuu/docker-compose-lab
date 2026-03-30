@@ -228,8 +228,6 @@ curl http://localhost:8083/emp/
 | App 시작 조건 | DB `healthy` 이후 | 즉시 (동시 가동) |
 | 기동 시 오류 | 없음 | Connection Error |
 | `docker ps` 상태 표시 | `(healthy)` 표시 | 상태 없음 |
-| DB 장애 감지 | `/emp` 기준으로는 감지 못함 ⚠️ | 감지 불가 ❌ |
-
 
 <br/>
 
