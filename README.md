@@ -213,7 +213,7 @@ curl http://localhost:8083/emp/
 - App 컨테이너는 `healthy` 상태 유지
 - `/emp` 엔드포인트는 계속 302 응답 반환
 
-**원인 분석**
+**원인**
 > `/emp`는 DB 연결 상태를 확인하지 않는 엔드포인트로 
 > DB가 죽어도 Spring Boot 프로세스 자체는 살아있으므로 HTTP 응답이 가능.
 > 따라서 App HEALTHCHECK가 DB 장애를 감지하지 못하는 한계가 존재하기에
@@ -241,7 +241,7 @@ curl http://localhost:8083/emp/
 
 docker compose down 후에도 볼륨(db_data)이 남아있으면 MySQL이 재기동 시 기존 데이터를 그대로 사용하여 초기화 과정을 건너뜀. 이 경우 DB 기동 시간이 매우 짧아져 App보다 먼저 준비되면서 우연히 연결에 성공
 
-**해결 방법**
+**해결**
 
 ```bash
 docker compose down
